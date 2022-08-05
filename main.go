@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 }
 
 func helloWorld(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Hello World, today date is `%s`", time.Now())
+	fmt.Fprintf(w, "Hello World, UTC Date today : `%s`", time.Now().UTC())
 }
