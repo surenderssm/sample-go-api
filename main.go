@@ -12,5 +12,5 @@ func main() {
 }
 
 func helloWorld(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World, UTC Date today : `%s`", time.Now().UTC())
+	fmt.Fprintf(w, "Hello World, UTC Double Date today : `%s`", time.Now().UTC())
 }
